@@ -1,2 +1,0 @@
-const cls:any={ "In Transit":"bg-[#EAF4EA] text-[#246128]","Loading":"bg-[#FFF5CC] text-[#765F00]","Idle":"bg-[#F0F0ED] text-[#555]","Delayed":"bg-[#FDE9E6] text-[#A4261C]","Maintenance":"bg-[#FDE9E6] text-[#A4261C]","At Stop":"bg-[#EEEAFD] text-[#5B46A6]","Offline":"bg-[#E9E9E7] text-[#777]"};
-export default function Status({value}:{value:string}){return <span className={`inline-flex rounded-full px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide ${cls[value]||"bg-[#eee] text-[#555]"}`}>{value}</span>}

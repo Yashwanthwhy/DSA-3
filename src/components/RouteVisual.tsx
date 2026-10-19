@@ -1,6 +1,0 @@
-export default function RouteVisual(){return <div className="grid-bg relative min-h-[300px] overflow-hidden rounded-2xl border border-[#E5E5E1] bg-[#ECECE8] p-5">
- <svg viewBox="0 0 800 330" className="absolute inset-0 h-full w-full"><path d="M80 240 C200 210 220 90 370 115 S560 250 720 90" fill="none" stroke="#fff" strokeWidth="30"/><path d="M80 240 C200 210 220 90 370 115 S560 250 720 90" fill="none" stroke="#111" strokeWidth="2" className="route-line"/><path d="M370 115 L370 255" stroke="#C92A1D" strokeWidth="3" strokeDasharray="5 7"/><path d="M720 90 L720 270" stroke="#C92A1D" strokeWidth="3" strokeDasharray="5 7"/></svg>
- {[[10,72,"HYD"],[44,29,"NAG"],[90,27,"DEL"],[45,77,"BPL"]].map(([x,y,t],i)=><div key={String(t)} className="absolute" style={{left:`${x}%`,top:`${y}%`}}><div className={`h-4 w-4 rounded-full border-4 border-white shadow ${i===1?"bg-[#FFD400]":"bg-[#C92A1D]"}`}/><div className="mt-1 text-[9px] font-extrabold tracking-wider">{t}</div></div>)}
- <div className="absolute left-[30%] top-[45%] rotate-[-8deg] rounded-lg bg-white px-3 py-2 text-[10px] font-bold shadow">TRUCK · TS09AB1234</div>
- <div className="absolute right-[13%] top-[21%] rounded-lg bg-[#111] px-3 py-2 text-[10px] font-bold text-white">DELHI HUB</div>
- </div>}
